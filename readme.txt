@@ -5,15 +5,16 @@ projet2 - openclassrooms - booki
 
 
 \problèmes rencontrés
+/problèmes résolus
 
 
 recherche appelé search
-\les composants ne se collent pas
-\boutton search fonctionne plus quand "border" ou "background"
+/j'ai réussi à coller les éléments avec position relative, vertical align m'a l'air plus approprié mais j'arrive pas le faire fonctionner
+/le bouton est "cliquable", le style qui lui était appliqué n'était pas bon
 
 filtres appelé filters
-\jarrive pas a aligner les icones avec le text
-\boutton filtre fonctionne plus quand "border"
+/j'ai réussi à aligner les éléments avec position relative, vertical align m'a l'air plus approprié mais j'arrive pas le faire fonctionner
+/le bouton est "cliquable", le style qui lui était appliqué n'était pas bon
 
 info appelé info
-\jarrive pas a aligner les icones avec le text
+/j'ai réussi à aligner les éléments avec position relative, vertical align m'a l'air plus approprié mais j'arrive pas le faire fonctionner
