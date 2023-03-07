@@ -57,6 +57,8 @@ p{
 
 .search {
     margin: 50px 0;
+    position: relative;
+    bottom: 42px;
 }
 
 .search i {
@@ -95,6 +97,8 @@ p{
 .filters {
     display: flex;
     flex-direction: row;
+    position: relative;
+    bottom: 50px;
 }
 
 .filters input {
@@ -106,7 +110,7 @@ p{
     font-weight: 700;
     height: 35px;
     position: relative;
-    top: 8px
+    bottom: 10px;
 }
 
 .filters input:hover {
@@ -115,7 +119,7 @@ p{
 
 .filters i {
     position: relative;
-    left: 43px; top: 18px;
+    left: 43px; 
     color: #0065FC;
     z-index: 1;
 }
@@ -128,6 +132,8 @@ p{
     display: flex;
     flex-direction: row;
     margin: 50px 0;
+    position: relative;
+    bottom: 79px;
 }
 
 .info i {
@@ -136,30 +142,131 @@ p{
     border: 2px solid lightgray;
     border-radius: 40px 40px 40px 40px;
     color: #0065FC;
-}
-
-.hebergementbloc {
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    bottom: 22px;
 }
 
 .hebergement {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 40%;
-    background-color: grey;
+    position: relative;
+    bottom: 520px;
+    margin-left: 100px;
+    width: 920px;
+    height: 611.5px;
+    background: #F2F2F2;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.hebergement.card {
+    margin-top: 20px;
 }
 
 .populaire {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    background-color: lightgrey;
-    width: 20%;
-
+    justify-content: end;
+    background: #F2F2F2;
+    border-radius: 15px;
+    width: 429px;
+    height: 611.5px;
+    position: relative;
+    bottom: 172px;
+    left: 20px;
 }
 
-.card img {
-    height: 100px;
+.hebergement img {
+    height: 124px;
+    width: 250.33px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.populaire img {
+    width: 123px;
+    height: 134px;
+    object-fit: cover;
+    border-width: 5px 0px 5px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.hebergement-bloc h1 {
+    position: relative;
+    bottom: 100px;
+    left: 130px;
+    z-index: 1;
+}
+
+.affiche {
+    position: relative;
+    left: 40px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.card, .card1 {
+    margin: 15px;
+    padding: 5px;
+    width: 250.33px;
+    height: 207.25px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    left: 24px;
+}
+
+.card {
+    position: relative;
+    top: 60px;
+}
+
+.card1 {
+    position: relative;
+    top: 37px;
+}
+
+.card2 {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 369px;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    position: relative;
+    top: 90px;
+}
+
+.container, p {
+    position: relative;
+    bottom: 20px;
+    margin-left: 5px;
+}
+
+.container p {
+    top: 2px;
+}
+
+.container i {
+    position: relative;
+    bottom: 7px;
+    margin-left: 5px;
+    size: 50%;
+    color: #0065FC;
+}
+
+.container i:nth-last-child(1) {
+    color: #F2F2F2;
 }
