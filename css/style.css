@@ -138,3 +138,28 @@ p{
     color: #0065FC;
 }
 
+.hebergementbloc {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    background-color: grey;
+}
+
+.populaire {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 20%;
+
+}
+
+.card img {
+    height: 100px;
+    object-fit: cover;
+}
