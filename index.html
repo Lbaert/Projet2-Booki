@@ -32,155 +32,196 @@
                 <input class="text" type="text" placeholder="Ville, Pays"> 
                 <input class="button" type="button" value="Rechercher">           
             </div>
-            <div class="filters">
-                <p>Filtres</p>
-                <i class="fa-solid fa-money-bill-wave"></i>
-                <input type="button" value="Économique"> 
-                <i class="fa-solid fa-person"></i>
-                <input type="button" value="Familial">   
-                <i class="fa-solid fa-heart"></i>
-                <input type="button" value="Romantique">  
-                <i class="fa-solid fa-fire"></i>
-                <input type="button" value="Nos pépites">   
+            <div id="filter-box">
+                <div>
+                    <h2>Filtres</h2>
+                </div>
+                <div class="filters">
+                    <div class="filter">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <div class="filter-name">
+                            Économique
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+                        <div class="filter-name">
+                            Familial
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="filter-name">
+                            Romantique
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div class="filter-name">
+                            Nos pépites
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <div class="info">
                 <i class="fa-solid fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
-        <section class="hebergement-bloc">
-            <h1>Hébergements à Marseille</h1>
-            <div class="hebergement">             
-                <div class="card">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>                      </div>
+        <section id="hebergement-populaire">
+                <div class="hebergement">  
+                    <h1>Hébergements à Marseille</h1>  
+                    <div id="card-hotel">         
+                    <div class="card">
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        <div class="container">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de 52€</p>
+                            <div>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>                      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina">
+                        <div class="container">
+                        <h2>Hôtel Chez Amina</h2>
+                        <p>Nuit à partir de 96€</p>
+                            <div>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>                      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                        <div class="container">
+                        <h2>Hôtel Les mouettes</h2>
+                        <p>Nuit à partir de 76€</p>
+                            <div>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>                      
+                            </div>
+                        </div>
+                    </div>
+                    <!-- a faire proprement -->
+                    <div class="card">
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        <div class="container">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de 52€</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        <div class="container">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de 52€</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        <div class="container">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de 52€</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        </div>
+                    </div>
+                 </div>
+                    <h2 class="affiche">Afficher plus</h2>
+                </div>
+                <div class="populaire">
+                    <div id="title">
+                        <h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div id="popular-card"> 
+                        <div class="card">
+                            <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                            <div class="legend">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <strong>52€</strong></p>
+                            <div class="rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                            <div class="legend">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <strong>52€</strong></p>
+                            <div class="rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                            <div class="legend">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <strong>52€</strong></p>
+                            <div class="rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina">
-                    <div class="container">
-                      <h2>Hôtel Chez Amina</h2>
-                      <p>Nuit à partir de 96€</p>
-                      <div>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>                      </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
-                    <div class="container">
-                      <h2>Hôtel Les mouettes</h2>
-                      <p>Nuit à partir de 76€</p>
-                      <div>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>
-                        <i class="fa-solid fa-star fa-xs"></i>                      </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                </div>
-                <h2 class="affiche">Afficher plus</h2>
-            </div>
-            <div class="populaire">
-                <div class="card2">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container2">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container2">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-                    <div class="container2">
-                      <h2>Hôtel du port</h2>
-                      <p>Nuit à partir de 52€</p>
-                      <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                </div>
-            </div>
         </section>
-
+<!-- a faire -->
     </main>
 
 </body>
