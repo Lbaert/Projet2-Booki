@@ -102,7 +102,6 @@ p {
     border: 0px solid lightgrey;
     line-height: 63px;
     position: relative;
-    width: 7%;
     right: 4px;
     bottom: 1px;
     font-size: 20px;
@@ -247,7 +246,6 @@ h2 {
     border-radius: 20px 20px 20px 20px;
 }
 
-
 /* populaire */
 
 .populaire {
@@ -279,21 +277,22 @@ h2 {
 
 h3 {
     font-weight: 700;
-    font-size: 22px;
-    margin: 10px 0 0 10px;
-}
-
-.populaire p {
-    margin: 10px 0 0 10px;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 .legend {
-padding-left: 10px;
+padding: 0 20px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-around;
 }
 
-.rate {
-    margin: 110px 0 0 10px;
+.legend p{
+margin-top: 0;
 }
+
 
 .populaire .card {
     margin: 30px;
@@ -353,3 +352,201 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+/* mobile */
+
+@media (min-device-width : 375px) and (max-device-width : 667px) {
+    nav {
+        display: block;
+        width: 100%;
+    }
+    ul {
+        padding: 0%;
+        margin: 0;
+    }
+    nav img {
+        margin-left: 125px;
+        margin-top: 30px;
+        width: 25%;
+    }
+    li {
+        border-bottom: solid 2px #F2F2F2;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    li:hover {
+        padding-bottom: 15px;
+        border-bottom: solid 2px #0065FC;
+    }
+    li a:hover {
+        border-top-style: none;
+        border-top: solid 0px;
+        padding-left: 15px;
+    }
+    .cta {
+        margin: 0 15px;
+    }
+    header a {
+        padding-left: 15px;
+    }
+    .text {
+        width: 40%;
+    }
+    .button {
+        font-size: 16px;
+    }
+    #filter-box {
+        display: block;
+    }
+    .filter {
+        width: 30%;
+        margin: 10px;
+    }
+    .filter-icon {
+        width: 30px;
+    }
+    .filter-icon i {
+        padding: 10px;
+
+    }
+    .info i {
+        padding: 15px;
+        align-self: center;
+    }
+    #hebergement-populaire {
+        display: block;
+    }
+    .hebergement {
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+    }
+    .hebergement .card {
+        width: 75%;
+    }
+    body {
+        width: 100%;
+        margin: auto;
+    }
+    .populaire {
+        width: 100%;
+        background: #FFFFFF;
+        margin-top: 40px;
+    }
+    h1 {
+
+    }
+    .affiche {
+        margin: 0;
+        padding: 0 0 20px 50px;
+        font-size: 18px;
+    }
+    .hebergement h1 {
+        margin-left: 35px;
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+    .activites {
+        display: block;
+        width: 100%;
+    }
+    .activite h1{
+        margin-left: 20px;
+    }
+    .activite p{
+        padding: 10px;
+        margin: auto;
+    }
+    .card2 {
+        width: 100%;
+        margin: 30px 0;
+    }
+    .card2 img {
+        height: 200px;
+    }
+    #footer {
+        display: block;
+        padding: 10px;
+    }
+    .footer {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+}
+/* tablette */
+
+@media (min-device-width : 820px) and (max-device-width : 1180px) {
+    #hebergement-populaire {
+        display: block;
+    }
+    .hebergement {
+        width: 95%;
+        margin: auto;
+    }
+    .hebergement .card {
+        width: 25%;
+    }
+    .populaire {
+        width: 95%;
+        margin: auto;
+    }
+    .activite img {
+        height: 150px;
+    }
+    .activite p {
+        font-size: 16px;
+        width: 95%;
+    }
+    #popular-card { 
+        display: flex;
+        flex-direction: row;
+        height: 220px;
+    }
+    .populaire .card {
+        width: 30%;
+        margin: auto;
+        height: 169px;
+    }
+    .populaire .img {
+        width: 44%;
+    }
+    .footer {
+        font-size: 14px;
+    }
+    #filter-box {
+        display: block;
+    }
+    .filters {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .filter-icon {
+        width: 50px;
+    }
+    .filter-name {
+        padding: 0;
+    }
+    .container h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .rate {
+        padding: 0;
+    }
+    .legend {
+        padding: 0 0 0 5px;
+    }
+}
+/* large desktop */
+
+@media all (aspect-ratio: 21/9) {
+    body {
+    width: 60%;
+    }
+    h3 {
+        font-size: 20px;
+    }
+  }
