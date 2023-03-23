@@ -2,25 +2,25 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booki</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
-    <header>
+    <header> <!-- nav avec logo + ul (hegergements et activités) -->
         <nav>
             <a href="images/logo/Booki@3x.png" class="lien-icone" target="_blank">
                 <img src="images/logo/Booki.png" alt="Logo Robbie Lens" />
             </a>
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activite">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -31,10 +31,11 @@
             <div class="search">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
                 <input class="text" type="text" placeholder="Ville, Pays"> 
-                <input class="button" type="button" value="Rechercher">           
+                <input class="button" type="button" value="Rechercher">
+                <i class="fa-solid fa-magnifying-glass"></i>          
             </div>
             <div id="filter-box">
-                <div>
+                <div id="title-filter">
                     <h2>Filtres</h2>
                 </div>
                 <div class="filters">
@@ -80,7 +81,7 @@
         </section>
 
         <section id="hebergement-populaire">
-                <div class="hebergement">  
+                <div id="hebergement">  
                     <h1>Hébergements à Marseille</h1>  
                     <div id="card-hotel">         
                         <div class="card">
@@ -89,11 +90,11 @@
                                 <h2>Hôtel du port</h2>
                                 <p>Nuit à partir de <strong>52€</strong></p>
                                 <div>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>                      
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>                      
                                 </div>
                             </div>
                         </div>
@@ -103,11 +104,11 @@
                                 <h2>Hôtel Chez Amina</h2>
                                 <p>Nuit à partir de <strong>96€</strong></p>
                                 <div>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>                      
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>                     
                                 </div>
                             </div>
                         </div>
@@ -117,25 +118,25 @@
                                 <h2>Hôtel Les mouettes</h2>
                                 <p>Nuit à partir de <strong>76€</strong></p>
                                 <div>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>                        
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>                       
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             <div class="container">
-                                <h2>Hôtel du port</h2>
+                                <h2>Hôtel de la mer</h2>
                                 <p>Nuit à partir de <strong>46€</strong></p>
                                 <div>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>   
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>   
                                 </div>
                             </div>
                         </div>
@@ -145,11 +146,11 @@
                                 <h2>Auberge La Canebière</h2>
                                 <p>Nuit à partir de <strong>25€</strong></p>
                                 <div>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>   
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>     
                                 </div>
                             </div>
                         </div>
@@ -159,11 +160,11 @@
                                 <h2>Auberge Le Panier</h2>
                                 <p>Nuit à partir de <strong>23€</strong></p>
                                 <div>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>
-                                    <i class="fa-solid fa-star fa-xl"></i>    
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>     
                                 </div>
                             </div>
                         </div>
@@ -177,9 +178,9 @@
                     </div>
                     <div id="popular-card"> 
                         <div class="card">
-                            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Auberge la Canebière">
+                            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                             <div class="legend">
-                                <h3>Auberge la Canebière </h3>
+                                <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de <strong>25€</strong></p>
                                 <div class="rate">
                                     <i class="fa-solid fa-star"></i>
@@ -222,7 +223,7 @@
                 </div>
         </section>
 
-        <section class="activite">
+        <section id="activite">
             <h1>Activités à Marseille</h1>
             <div class="activites">
                 <div class="card2">
@@ -255,18 +256,18 @@
         <footer>
             <div id="footer" >
                 <div class="footer">
-                    <h1>À propos</h1>
+                    <h3>À propos</h3>
                     <p>Fonctionnement du site</p>
                     <p>Conditions générales </p>  
                     <p>Données et confidentialité</p>           
                 </div>
                 <div class="footer">
-                    <h1>Nos hébergements</h1>
+                    <h3>Nos hébergements</h3>
                     <p>Charte qualité</p>
                     <p>Proposer votre hôtel</p>
                 </div>
                 <div class="footer">
-                    <h1>Assistance</h1>
+                    <h3>Assistance</h3>
                     <p>Centre d’aide</p>
                     <p>Nous contacter</p>
                 </div>
