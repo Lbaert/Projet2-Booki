@@ -114,6 +114,7 @@ p {
     right: 4px;
     bottom: 1px;
     font-size: 20px;
+    padding: 0 15px
 }
 .search i:nth-last-child(1) {
     display: none;
@@ -149,20 +150,18 @@ p {
 }
 
 .filter:hover {
-    background-color: #F2F2F2;
+    background-color: #f3f8ff;
 }
 
 
 .filter-icon {
-    background-color: #DEEBFF;
     color: #0065FC;
     border-radius: 100px;
     height: 50px;
     width: 50px;
-    border: 1px solid #DEEBFF;
     display: flex;
     align-items: center;
-    margin-left: -20px;
+    margin-left: -15px;
     justify-content: center;
 }
 
@@ -173,7 +172,6 @@ p {
 .filter-name {
     font-weight: 700;
     font-size: 16px;
-    padding: 0px 10px;
 }
 
 .info {
@@ -252,7 +250,7 @@ h2 {
 #hebergement .card {
     margin: 20px;
     padding: 7px;
-    width: 27%;
+    width: 26%;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px 20px 20px 20px;
@@ -381,7 +379,7 @@ footer {
 
 /* mobile */
 
-@media (max-width : 767px) {
+@media (max-width : 768px) {
     nav {
         display: block;
         width: 100%;
@@ -423,7 +421,7 @@ footer {
         padding-left: 15px;
     }
     .text {
-        width: 55%;
+        width: 46%;
     }
     .button {
         font-size: 16px;
@@ -432,15 +430,16 @@ footer {
         display: block;
     }
     .filter {
-        width: 30%;
         margin: 10px;
     }
-    .filter-icon {
-        width: 30px;
-    }
     .filter-icon i {
-        padding: 10px;
-
+        margin-left: 12px;
+    }
+    .filter-icon {
+        margin-left: -20px;
+    }
+    .filter-name {
+        font-size: 14px;
     }
     .info i {
         align-self: center;
@@ -568,7 +567,7 @@ footer {
 }
 /* tablette */
 
-@media (min-width : 767px) and (max-width : 1024px) {
+@media (min-width : 768px) and (max-width : 1024px) {
     .text {
         width: 30%;
     }
